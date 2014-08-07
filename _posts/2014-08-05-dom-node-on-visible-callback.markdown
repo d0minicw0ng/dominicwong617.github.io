@@ -8,19 +8,20 @@ categories: JavaScript jQuery
 Context:
 
 At [OpsManager][opsmanager_url], we have been having memory issues with our Daily Drilling Reports
-module because we used to have to store hundreds of megabytes of data into Backbone Collections.
+module because we have to store hundreds of megabytes of data into Backbone Collections, while our
+customers on the oilfield are mostly using not so powerful computers.
 
-Since OpsManager is an offline application, we had to somehow get a hold of the data without having
+Since OpsManager is an offline application, we have to somehow get a hold of the data without having
 to talk to the server. We use IndexedDB to store the data before syncing to the server (when there
 is an internet connection) and we use Backbone.js as the frontend MVC framework.
 
 However, Backbone.js is not the best solution for our problem because of the extra amount of data
 that we are using. While we could just fetch data from IndexedDB when we need it, we are just
-letting the Backbone Collections to linger around when it is not needed.
+letting the Backbone Collections to sit there eating memory when it is not needed.
 
 The goal of this refactor is to abandon Backbone Collections altogether and use a data store service
 to talk to IndexedDB and only fetch the data needed when we navigate to specific views. If I go to
-the page of a specific Daily Drilling Report, I only want one object, instead of the complete collection,
+the page of a specific Daily Drilling Report, I only want one object instead of the complete collection,
 which is currently the size of ~75,000. We forgo Backbone Model/Collections and replace
 the model with Knockout.js in Backbone View.
 
