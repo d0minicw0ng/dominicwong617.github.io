@@ -1,26 +1,24 @@
-# Site settings
-title: The Blog of a Nomad
-email: dominic.wong.617@gmail.com
-description: Yet Another Blog On Tech
-baseurl: ""
-url: dominicwong617.github.io
-twitter_username: dominicwong617
-github_username:  dominicwong617
-tagline:          A Jekyll theme
-author:
-  name:           Dominic Wong
-  url:            https://twitter.com/dominicwong617
-
-# Build settings
-markdown: kramdown
-permalink: pretty
-
 # Dependencies
-markdown:         redcarpet
-pygments:         true
+markdown         : redcarpet
+pygments         : true
 
 # Permalinks
-permalink:        pretty
+permalink        : pretty
 
-paginate:         5
+# Site settings
+title            : The Blog of a Nomad
+description      : Yet Another Blog On Tech
+url              : dominicwong617.github.io
+baseurl          : /
+tagline          : A Jekyll theme
+
+author           :
+  name           : Dominic Wong
+  url            : https://twitter.com/dominicwong617
+
+# Build settings
+markdown         : kramdown
+permalink        : pretty
+
+paginate         : 5
 
