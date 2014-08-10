@@ -2,6 +2,7 @@
 layout: post
 title: "Open Jasmine specs from Vim"
 date: 2014-08-10 14:55:00
+comments: True
 categories: Vim Jasmine
 ---
 

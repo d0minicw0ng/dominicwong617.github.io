@@ -2,6 +2,7 @@
 layout: post
 title: "DOM Node on visible callback"
 date: 2014-08-05 00:00:00
+comments: True
 categories: JavaScript jQuery
 ---
 
