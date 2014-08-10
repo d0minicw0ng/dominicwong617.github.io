@@ -38,7 +38,7 @@ Yes, you can first run the whole file and then click on the ones that you are in
 there are 100 asynchronous specs in the file and your spec is the last one?
 
 How annoying is that! It just sucks, and you know what I mean. Therefore, my co-worker and I wrote a vim script
-to open jasmine specs from vim. When you type <Leader>oj, it looks at your current line and determine what specs
+to open jasmine specs from vim. When you type |oj, it looks at your current line and determine what specs
 to run.
 
 Let's say if your cursor is inside a "it" block or on the "it" line, then it will only run one spec. If your cursor
