@@ -20,7 +20,7 @@ without having to write all the codes yourself. All you have to do is
 
 {% highlight javascript %}
 
-var fileUploader = $*('input[type=file]').uploadPreviewer();
+var fileUploader = $('input[type=file]').uploadPreviewer();
 // Do some work....
 fileUploader.submit(successCallback, errorCallback);
 
