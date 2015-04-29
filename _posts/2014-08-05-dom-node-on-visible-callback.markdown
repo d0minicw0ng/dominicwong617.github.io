@@ -54,7 +54,7 @@ and then call initialize timepicker. I came up with a custom jQuery binding that
         if (self.is(":visible")) {
             callback.call(self);
         } else {
-            timer = setInterval(function() {
+            var timer = setInterval(function() {
                 if ($(selector).is(":visible")) {
                     callback.call($(selector));
                     clearInterval(timer);
