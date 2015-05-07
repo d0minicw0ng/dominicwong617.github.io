@@ -202,8 +202,8 @@ syncObjectStore: (itemsToBeSaved, db) ->
           retryTransaction.onerror = (event) -> reject event
           retryTransaction.onabort = (event) -> reject event
 
-        transaction.onerror = -> retry()
-        transaction.onabort = -> retry()
+        transaction.onerror = => retry()
+        transaction.onabort = => retry()
 
       else
         resolve()
