@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Learning vs Doing"
-date: 2015-10-13 22:15:00
+date: 2015-10-30 22:15:00
 comments: True
 categories: Programming Learning Doing
 ---
